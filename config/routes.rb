@@ -28,17 +28,17 @@ Rails.application.routes.draw do
   # Sign up endpoint
   post   '/users/signup'   => 'users#create'
   
-  # Endpoint to list all users , disabled
-  # get    '/users'          => 'users#index'
+  # Endpoint to list all users , 
+  get    '/users'          => 'users#index'
 
-  # Endpoint to view detail of user, disabled for now
+  # Endpoint to view detail of user,
   # get    '/users/current'  => 'users#current'
  
   # User profile update endpoint, disabled for now
-  # patch  '/user/:id'       => 'users#update'
+  patch  '/user/:id'       => 'users#update'
 
   # User account deletion endpoint, disabled
-  # delete '/user/:id'       => 'users#destroy'
+  delete '/user/:id'       => 'users#destroy'
   
 
  

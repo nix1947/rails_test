@@ -3,7 +3,9 @@ class UsersController < ApplicationController
 
     # Use Knock to make sure the current_user is authenticated before completing request.
     # Sign in page and Sign up page do not require authentication. 
-    before_action :authenticate_user,  only: [:index, :show, :update, :destroy]
+
+    # Used for authentication
+    # before_action :authenticate_user,  only: [:index, :show, :update, :destroy]
    
     # GET /users 
     def index
